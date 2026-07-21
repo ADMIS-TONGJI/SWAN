@@ -27,10 +27,8 @@ SWAN/
 │   └── dataset.py
 ├── train.py               # training script
 ├── evaluate.py            # evaluation script
-├── smoke_test.py          # sanity checks
 ├── README.md
-├── requirements.txt
-└── .gitignore
+└── requirements.txt
 ```
 
 ## Requirements
@@ -75,7 +73,6 @@ python train.py \
 Optional flags:
 
 - `--cache`: preload all samples into RAM.
-- `--gpus 0,1`: multi-GPU training with DataParallel.
 - `--out_dir ./ckpts`: checkpoint output directory.
 
 Checkpoints are saved as `<dataset_name>_gated_<cw|nocw>[_<run_tag>]_best.pt`.
