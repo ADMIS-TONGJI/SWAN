@@ -22,7 +22,7 @@ SWAN/
 │   ├── subband_reweight.py
 │   ├── mel_compression.py
 │   ├── projection.py
-│   ├── fusion.py          # GatedFusion only
+│   ├── fusion.py          # GatedFusion
 │   ├── classifier.py
 │   └── dataset.py
 ├── train.py               # training script
