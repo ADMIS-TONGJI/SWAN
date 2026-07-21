@@ -6,8 +6,8 @@ Heterogeneous Fusion of Spectrogram and Waveform with Sub-band Adaptation for Un
 
 SWAN fuses two branches for underwater acoustic classification:
 
-- **wav2vec2 audio embeddings**: pre-extracted, frozen wav2vec2 last-hidden-state embeddings, time-pooled.
-- **Mel spectrograms**: processed by an sub-band adaptive spectrogram learning module and a compression module.
+- **raw waveform branch**: pre-extracted, frozen wav2vec2 last-hidden-state embeddings, time-pooled.
+- **spectrogram branch**: processed by an sub-band adaptive spectrogram learning module and a compression module.
 
 The two branch embeddings are projected to the same dimension and fused with a **gated fusion** module, followed by an MLP classifier.
 
